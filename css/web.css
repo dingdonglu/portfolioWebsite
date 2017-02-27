@@ -1,0 +1,67 @@
+#mainBody {
+  background-image: url('gif/nc.gif');
+  background-size: cover;
+}
+body{
+  background-color: #2A2826;
+  color:white;
+  font-family: 'Cinzel', sans-serif;
+  font-style: normal;
+}
+.header{
+  position: fixed;
+  left: 5%;
+}
+#lastName {
+  font-family: 'Cinzel', sans-serif;
+  font-style: normal;
+  font-weight: 10;
+}
+
+#links{
+  color: white;
+  position: fixed;
+  margin: 100px auto;
+  left: 5%;
+}
+#folio {
+  font-family: 'Cinzel', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+a{
+  color:white;
+}
+.ncgif{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  overflow-y: hidden;
+
+}
+#lastName {
+  font-family: 'Cinzel', sans-serif;
+  font-style: italic;
+
+  font-weight: 100;
+}
+#home{
+  position: absolute;
+  top:5%;
+  left: 5%;
+}
+#info{
+  position: absolute;
+  left: 5%;
+  top:5%
+}
+#sudokuImg {
+  display: block;
+  margin: 0 auto;
+}
+
+#Sudoku p{
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/calculater.css">
+  <title>Calculater</title>
+<head>
+<div id="home">
+    <a href="myFirstWeb.html"><img style="width: 40px; height: 40px;" src="gif/home.png" alt=""></a>
+</div>
+</head>
+<body>
+<div class="box">
+    <div class="display"><input type="text" readonly size="20" id="d"></div>
+    <div class="keys">
+        <p>
+        <input type="button" class="button gray" value="mrc" onclick='c("not defined ")'>
+        <input type="button" class="button gray" value="(" onclick='math("(")'>
+        <input type="button" class="button gray" value=")" onclick='math(")")'>
+        <input type="button" class="button pink" value="/" onclick='math("/")'>
+        </p>
+        <p>
+        <input type="button" class="button num" value="7" onclick='math("7")'>
+        <input type="button" class="button num" value="8" onclick='math("8")'>
+        <input type="button" class="button num" value="9" onclick='math("9")'>
+        <input type="button" class="button pink" value="*" onclick='math("*")'>
+        </p>
+        <p>
+        <input type="button" class="button num" value="4" onclick='math("4")'>
+        <input type="button" class="button num" value="5" onclick='math("5")'>
+        <input type="button" class="button num" value="6" onclick='math("6")'>
+        <input type="button" class="button pink" value="-" onclick='math("-")'>
+        </p>
+        <p>
+        <input type="button" class="button num" value="1" onclick='math("1")'>
+        <input type="button" class="button num" value="2" onclick='math("2")'>
+        <input type="button" class="button num" value="3" onclick='math("3")'>
+        <input type="button" class="button pink" value="+" onclick='math("+")'>
+        </p>
+        <p>
+        <input type="button" class="button num" value="0" onclick='math("0")'>
+        <input type="button" class="button num" value="." onclick='math(".")'>
+        <input type="button" class="button num" value="C" onclick='c("")'>
+        <input type="button" class="button equ" value="=" onclick='e()'>
+        </p>
+    </div>
+</div>
+
+</body>
+<script>
+function c(val)
+{
+    document.getElementById("d").value=val;
+}
+function math(val)
+{
+    document.getElementById("d").value+=val;
+}
+function e()
+{
+    try
+    {
+      c(eval(document.getElementById("d").value))
+    }
+    catch(e)
+    {
+      c('Error')
+    }
+}
+
+
+</script>
+</html>
